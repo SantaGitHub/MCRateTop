@@ -35,8 +35,8 @@ function mcrate_sec_script($filter){
  
 try{
 	if(isset($_REQUEST['nick']) && isset($_REQUEST['hash'])){
-		$nick = strip_tags($_REQUEST['nick']);
-		$hash = strip_tags($_REQUEST['hash']);
+		$nick = $_REQUEST['nick'];
+		$hash = $_REQUEST['hash'];
 		
 		if (empty($nick) or empty($hash) or empty($secret_word)) die('No data - no add!');  
 		
